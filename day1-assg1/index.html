@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restocked Womenswear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+          
+        }
+
+        .nav-container {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+        }
+
+        .nav-container>div {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-container>div>div {
+            margin: 0 15px;
+        }
+
+        .nav-container a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-container a:hover {
+            color: #f2a80a;
+        }
+
+        .nav-container i {
+            font-size: 24px;
+        }
+
+        .nav-container-first {
+            font-size: 28px;
+            color: red;
+        }
+
+        .image-container {
+            width: 100%;
+        }
+
+        .image-container>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            
+            padding: 20px;
+           
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 25%;
+            margin-right: 40px;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #f2a80a;
+        }
+
+       .product-grid {
+        width: 75%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 10px; 
+        border: 1px solir red;
+        }
+
+
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            padding: 10px;
+        }
+
+        .product-details p {
+            margin: 5px 0;
+        }
+
+        .product-category {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .product-price span {
+            color: #888;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="nav-container-first">Grid.</div>
+        <div>
+            <div><a href="#">Summer24</a></div>
+            <div><a href="#">Topwear</a></div>
+            <div><a href="#">Bottomwear</a></div>
+            <div><a href="#">Shoes & Accessories</a></div>
+            <div><a href="#">Restocked</a></div>
+            <div><a href="#">Themes</a></div>
+        </div>
+        <div>
+            <div><a href="#"><i class="fas fa-search"></i></a></div>
+            <div><a href="#"><i class="fas fa-user"></i></a></div>
+            <div><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage_Banner__1_ycCzHWB.jpg?format=webp&w=1500&dpr=1.3"
+            alt="img">
+    </div>
+
+    <div class="container">
+        <div class="breadcrumb">
+            Home / The Souled Store / Restocked Womenswear
+        </div>
+        <h1>Restocked Womenswear - 43 items</h1>
+        <div class="content">
+            <div class="sidebar">
+                <h2>PRODUCTS</h2>
+                <input type="text" placeholder="Search for Products">
+                <ul>
+                    <li><input type="checkbox"> Women Boyfriend Shirts</li>
+                    <li><input type="checkbox"> Women Bralette</li>
+                    <li><input type="checkbox"> Women Cargo Jeans</li>
+                    <li><input type="checkbox"> Women Cargo Joggers</li>
+                    <li><input type="checkbox"> Women Cropped Tops</li>
+                    <li><input type="checkbox"> Women Denim Jackets</li>
+                    <li><input type="checkbox"> Women Jeans</li>
+                    <li><input type="checkbox"> Women Joggers</li>
+                    <li><input type="checkbox"> Women Oversized Cropped T-Shirts</li>
+                    <li><input type="checkbox"> Women Oversized Shirt Dresses</li>
+                    <li><a href="#">+ 6 more</a></li>
+                </ul>
+            </div>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/top_selling_Indian_Retro_ZTs2yqW.jpg?format=webp&w=360&dpr=1.3" alt="White Bralette Top">
+                    <div class="product-details">
+                        <p>White Bralette Top</p>
+                        <p class="product-category">Women Bralette</p>
+                        <p class="product-price">₹ 699 <span>MRP incl. of all taxes</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/top_selling_1_1f3XPJg.jpg?format=webp&w=360&dpr=1.3" alt="Cotton Linen Lavender">
+                    <div class="product-details">
+                        <p>Cotton Linen: Lavender</p>
+                        <p class="product-category">Women Boyfriend Shirts</p>
+                        <p class="product-price">₹ 1399 <span>MRP incl. of all taxes</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/top_selling_The_Marvels_Flerkittens_spkwC8H.jpg?format=webp&w=360&dpr=1.3" alt="Korean Pants: Camel">
+                    <div class="product-details">
+                        <p>Korean Pants: Camel</p>
+                        <p class="product-category">Women Pants</p>
+                        <p class="product-price">₹ 1999 <span>MRP incl. of all taxes</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/top_selling_Amaranth_Blue_kIk4m1b.jpg?format=webp&w=360&dpr=1.3" alt="Powerpuff Girls: Sugar & Spice">
+                    <div class="product-details">
+                        <p>Powerpuff Girls: Sugar & Spice</p>
+                        <p class="product-category">Women Summer Shirts</p>
+                        <p class="product-price">₹ 999 <span>MRP incl. of all taxes</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
