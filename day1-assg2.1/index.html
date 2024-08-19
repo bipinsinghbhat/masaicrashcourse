@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+       
+  h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+         .first-container{
+            width: 80%;
+            margin: auto;
+         }
+
+
+
+
+        .sec-container{
+             width: 80%;
+            margin: auto;
+              display: grid;
+              grid-template-columns:repeat(4,1fr);
+               text-align: center;
+        }
+          
+.sec-container>div{
+    margin: 20px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+          @media all and (max-width:900px) and (min-width:600px){
+        .sec-container{
+                        display: grid;
+                        grid-template-columns:repeat(3,1fr);
+                        text-align: center;
+                  }
+          }
+
+           @media all and (max-width:600px) and (min-width:0px){
+        .sec-container{
+                        display: grid;
+                        grid-template-columns:repeat(2,1fr);
+                        text-align: center;
+                  }
+          }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div>
+        <h3>Board Meetings</h3>
+        <div class="first-container">
+            <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt="as">
+            <img src="https://www.masaischool.com/images/our-investors/capria-logo.svg" alt="as">
+            <img src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg" alt="as">
+        </div>
+        <h3>Strategic Investors</h3>
+        <div class="sec-container">
+            <div>
+                  <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="">
+                  <p>Ramakant Sharma</p>
+               
+            </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="">
+            <p>Vijay Shekhar Sharma</p>
+            
+        </div><div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+            <p>Kunal Shah</p>
+           
+        </div><div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="">
+            <p>Amrish Rau</p>
+           
+        </div><div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg" alt="">
+            <p>Sampad Swain</p>
+         
+        </div><div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg" alt="">
+            <p>Ankush Sachdeva</p>
+          
+        </div><div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png" alt="">
+            <p>Saurabh Garg</p>
+            <p></p>
+        </div><div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg" alt="">
+            <p>Vipin Pathak</p>
+           
+        </div>
+        </div>
+    </div>
+</body>
+</html>
