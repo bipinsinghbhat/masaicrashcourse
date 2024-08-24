@@ -4,6 +4,7 @@ import Counterapp from './components/Counterapp';
 import ToggleTheme from './components/ToggleTheme';
 import Visibilitytext from './components/Visibilityvalue';
 import Formdata from './components/Formdata';
+import Collegeform from './components/Collegeform';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <ToggleTheme/>
           <Visibilitytext/>
           <Formdata/>
+          <Collegeform/>
           </div>
   );
 }

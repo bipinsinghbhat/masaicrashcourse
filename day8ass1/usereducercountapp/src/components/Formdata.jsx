@@ -41,6 +41,7 @@ const Formdata=()=>{
           e.preventDefault()
           alert(`${state.email} and ${state.password}`)
           console.log("dd",`${state.email} and ${state.password}`);
+          
            dispatch({ type: "reset" });
        }
 
