@@ -5,6 +5,7 @@ import ToggleTheme from './components/ToggleTheme';
 import Visibilitytext from './components/Visibilityvalue';
 import Formdata from './components/Formdata';
 import Collegeform from './components/Collegeform';
+import Formdataa from './components/localstorage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Visibilitytext/>
           <Formdata/>
           <Collegeform/>
+          <Formdataa/>
           </div>
   );
 }
