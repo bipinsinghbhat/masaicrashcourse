@@ -1,0 +1,4 @@
+export const COFFEE_REQUEST = "COFFEE_REQUEST";
+export const COFFEE_SUCCESS = "COFFEE_SUCCESS";
+export const COFFEE_FAILURE = "COFFEE_FAILURE";
+
