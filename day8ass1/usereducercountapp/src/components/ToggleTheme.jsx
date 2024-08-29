@@ -3,19 +3,19 @@ import { useReducer } from "react";
 
 const initialstate={
     theme:"light",
-    styles:{
-       light:{color:"black",backgroundColor:"white"},
-       dark:{color:"white",backgroundColor:"black"}
-    }
+   
 }
+
+const TOGGLE_THEME="TOGGLE_THEME"
 
 const reducer=(state,action)=>{
          switch(action.type){
-            case "light":
-                return {...state, theme:"light"}
-
-           case "dark":
-            return {...state, theme:"dark"}
+           case TOGGLE_THEME:
+            return {
+               ...state, theme:state.theme==="light"? "dark":"light"
+            }
+            default:
+               return state
          }
 }
 
@@ -24,22 +24,35 @@ const ToggleTheme=()=>{
 
 
   const [state,dispatch]=useReducer(reducer,initialstate)
+ 
+    const handletoggle=()=>{
+      dispatch({type:TOGGLE_THEME})
+    }
 
- const handletogglelight=()=>{
-   dispatch({type:"light"})
- }
-
- const handletoggledark=()=>{
- dispatch({type:"dark"})
- }
-
+const themestyle = {
+  light: {
+    backgroundColor: "white",
+    color: "black",
+ 
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  dark: {
+    backgroundColor: "black",
+    color: "white",
+   
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+};
 
 
  return (
-    <div styles={{color:state.theme}}>
+    <div style={themestyle[state.theme]}>
         <h1>current theme:{state.theme}</h1>
-          <button onClick={handletogglelight} >lighttheme</button>
-          <button onClick={handletoggledark}>darktheme</button>
+         <button onClick={handletoggle}>Toggle Theme</button>
     </div>
  )
 
