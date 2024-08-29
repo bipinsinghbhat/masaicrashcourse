@@ -1,5 +1,6 @@
 import axios from "axios"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { AuthContext } from "../content/AuthContext"
 
     const initialstate={
          email:"",
@@ -8,7 +9,8 @@ import { useState } from "react"
 
 const Login=()=>{
 
-
+ const { login, logout, isAuth, setIsAuth, token, setToken } =
+   useContext(AuthContext);
  
      const [formstate,setFormState]=useState(initialstate)
    
@@ -24,8 +26,11 @@ const Login=()=>{
        
             try {
               const response = await axios.post(`https://reqres.in/api/login`,formstate);
-        
-              console.log(response)
+                console.log(response);
+                console.log(response.data.token);
+              setToken(response.data.token)
+               setIsAuth(true)
+              
            } catch (error) {
                console.log(error.message)
            }
@@ -60,3 +65,4 @@ const Login=()=>{
 }
 
 export default Login
+
