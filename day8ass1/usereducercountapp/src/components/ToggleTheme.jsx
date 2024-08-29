@@ -26,7 +26,7 @@ const ToggleTheme=()=>{
   const [state,dispatch]=useReducer(reducer,initialstate)
  
     const handletoggle=()=>{
-      dispatch({type:TOGGLE_THEME})
+      dispatch({type:"TOGGLE_THEME"})
     }
 
 const themestyle = {
