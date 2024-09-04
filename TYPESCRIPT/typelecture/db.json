@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": "f3e6",
+      "title": "learn 1 html",
+      "status": true
+    },
+    {
+      "id": "f4e7",
+      "title": "learn 2 react",
+      "status": false
+    }
+  ]
+}
